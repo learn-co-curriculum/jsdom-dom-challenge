@@ -47,11 +47,15 @@ function toggleButton (button) {
 }
 
 function incrementCounter() {
+    if (!isPaused){
         counter.innerText++;
+    } 
 }
 
 function decrementCounter() {
+    if (!isPaused){
         counter.innerText--;
+    }
 }
 
 function likeNumber() {
