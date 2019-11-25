@@ -21,9 +21,16 @@ Add the following features one by one, refreshing the page to see your functiona
 
 > Note: These deliverables are written in the form of _User Stories_. They describe the features from the perspective of a user when they visit the page.
 
+<!-- Complete -->
 1. As a user, I should see the timer increment every second once the page has loaded.
+
+<!-- Complete -->
 2. As a user, I can manually increment and decrement the counter using the plus and minus buttons.
+
+<!-- Complete -->
 3. As a user, I can 'like' an individual number of the counter. I should see count of the number of 'likes' associated with that number.
+
+<!--  -->
 4. As a user, I can pause the counter, which should 
 
   * pause the counter
