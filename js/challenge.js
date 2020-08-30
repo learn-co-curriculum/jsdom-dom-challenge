@@ -16,6 +16,14 @@ const increment = () => {
     counter.innerText = parseInt(counter.innerText) + 1 
 }
 
+const pauseTimer = () => {
+    let buttons = [plus, minus, heart, submit]
+    if (pause.innerText === "pause"){
+        pause.innerText = "resume"
+    } else {
+        pause.innerText = "pause"
+    }
+}
 
 
 
@@ -30,5 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
             increment()
         }
     }, 1000)
+
+    pause.addEventListener("click", () => { pauseTimer() })
+
 
 });
