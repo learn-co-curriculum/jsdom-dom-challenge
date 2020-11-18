@@ -1,5 +1,6 @@
 # The DOM Challenge
 
+
 If you open up index.html in the browser, you'll find a small application. It has a few features:
 
 * A Counter that increases by 1 each second
