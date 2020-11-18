@@ -21,8 +21,8 @@ Add the following features one by one, refreshing the page to see your functiona
 
 > Note: These deliverables are written in the form of _User Stories_. They describe the features from the perspective of a user when they visit the page.
 
-1. As a user, I should see the timer increment every second once the page has loaded.
-2. As a user, I can manually increment and decrement the counter using the plus and minus buttons.
+<!-- 1. As a user, I should see the timer increment every second once the page has loaded. -->
+<!-- 2. As a user, I can manually increment and decrement the counter using the plus and minus buttons. -->
 3. As a user, I can 'like' an individual number of the counter. I should see count of the number of 'likes' associated with that number.
 4. As a user, I can pause the counter, which should 
 
@@ -39,3 +39,8 @@ If you're not sure how to create or pause a timer, look into:
 [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)
 [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
 [`clearinterval`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)
+
+
+
+
+-No negatives
