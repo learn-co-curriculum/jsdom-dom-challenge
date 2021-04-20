@@ -1,15 +1,16 @@
 
 var currentSecs = 0;
 var currentTime = document.getElementById("counter");
+var timer = setInterval(countUp, 1000);
+const likesArray = []
+const comment = document.getElementById("comment-form");
 
 document.getElementById("minus").addEventListener("click", incrementDown); 
 document.getElementById("plus").addEventListener("click", incrementUp); 
 document.getElementById("pause").addEventListener("click", CheckTimer); 
 document.getElementById("heart").addEventListener("click", likeMessage); 
    
-    var timer = setInterval(countUp, 1000);
-    var likesArray = []
-    const comment = document.getElementById("comment-form");
+    
 
     comment.addEventListener("submit", submitComment);
 
@@ -29,7 +30,7 @@ document.getElementById("heart").addEventListener("click", likeMessage);
     }
 
     function CheckTimer() {
-        var value = document.getElementById("pause").innerHTML
+        const value = document.getElementById("pause").innerHTML
             if (value === " pause "){
                 stopTimer()
             }
@@ -66,11 +67,9 @@ document.getElementById("heart").addEventListener("click", likeMessage);
 
     
     function duplicateMessage(currentSecs){
-        debugger
-        var likesNumber = likesArray.filter(x => x === currentSecs)
+        const likesNumber = likesArray.filter(x => x === currentSecs)
         likesArray.push(currentSecs)
 
-        debugger
         const newLike = document.createElement("LI");
         const newText = document.createTextNode(`${currentSecs} has been liked ${likesNumber.length + 1} times.`);
         newLike.appendChild(newText);
@@ -80,7 +79,6 @@ document.getElementById("heart").addEventListener("click", likeMessage);
     function submitComment(e){
         e.preventDefault()
         sendData(e.target.children[0].value)
-        debugger
         e.target.children[0].value = ""
     }
 
